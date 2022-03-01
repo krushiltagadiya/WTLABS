@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="num"></h1>
+
+    <button onclick="g_num()">get number</button>
+
+
+
+
+
+    <script>
+     function g_num(){
+         let x=prompt("enter a number");
+         x=parseInt(x);
+         let a="";
+         for(var i=0;i<=x;i++)
+         {
+             a+=i +"</br>";
+         }
+         document.getElementById('num').innerHTML=a;
+     }
+    </script>
+</body>
+</html>
